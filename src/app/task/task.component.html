@@ -1,0 +1,13 @@
+<div class="card rotate-hor-center">
+    <div class="text-wrapper">
+        <input 
+            type="checkbox" 
+            name="tarea-hecha" 
+            id="tarea-hecha" 
+            [(ngModel)]="isTareaHecha"
+            (change)="toggleTareaHecha()"
+        />
+        <p [ngClass]="{ tachado: isTareaHecha }" > {{ texto }} </p>
+        <button class="eliminar" (click)="eliminar()">Eliminar</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="card">
+    <label for="task">Write a Task</label>
+    <input 
+    type="text" 
+    name="task" 
+    id="task" 
+    [(ngModel)]="newTask"
+    (keyup)="imprimirValor()"
+    placeholder="Escribe una tarea"/>
+    <button type="submit" (click)="Add()">Add Task</button>
+</div>
